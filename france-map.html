@@ -148,7 +148,7 @@
 
 <script>
 
-$(document).ready(function() {
+/*$(document).ready(function() {
             $(".departement").hover(function() {
                 $(this).css("fill", "blue");
             }, function() {
@@ -156,12 +156,20 @@ $(document).ready(function() {
             });
         });
 
-// $(document).ready(function() {
-//            $(".w-dropdown-toggle").hover(function() {
-//               $(this).css("fill", "green");
-//            }, function() {
-//                $(this).css("fill", "yellow");
-//            });
-//        });
+$(document).ready(function() {
+            $(".w-dropdown-toggle").hover(function() {
+               $(this).css("fill", "green");
+            }, function() {
+                $(this).css("fill", "yellow");
+            });
+        });*/
+
+$(document).ready(function() {
+            $(".departement").hover(function() {
+                $(this).removeClass("departement").addClass("departement-hover");
+            }, function() {
+                $(this).removeClass("departement-hover").addClass("departement");
+            });
+        });
 
 </script>
