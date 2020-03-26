@@ -149,6 +149,15 @@
 <script>
 
 $(document).ready(function() {
+            $(".region").hover(function() {
+                $(this).addClass("region-hover");
+            }, function() {
+                $(this).removeClass("region-hover");
+            });
+        });
+
+
+$(document).ready(function() {
             $(".departement").hover(function() {
                 $(this).removeClass("departement").addClass("departement-hover");
             }, function() {
@@ -156,13 +165,6 @@ $(document).ready(function() {
             });
         });
 
-$(document).ready(function() {
-            $(".region").hover(function() {
-                $(this).addClass("region-hover");
-            }, function() {
-                $(this).removeClass("region-hover");
-            });
-        });
 
 var list = document.getElementsByClassName("text-block-13");
 
