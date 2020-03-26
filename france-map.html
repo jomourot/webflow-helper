@@ -177,10 +177,10 @@
 
   for (let i = 0; i < list.length; i++) {
     $(list[i]).hover(function(){
-        $('#' + list[i].id + '-path').css({'fill':'#F18B72'});
+        $('#' + list[i].id + '-path').addClass("departement-hovered");
       });
       $(list[i]).mouseout(function(){
-        $('#' + list[i].id + '-path').css({'fill':'#77C892'});
+        $('#' + list[i].id + '-path').removeClass("departement-hovered");
       });
   }
 
