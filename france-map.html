@@ -148,22 +148,6 @@
 
 <script>
 
-/*$(document).ready(function() {
-            $(".departement").hover(function() {
-                $(this).css("fill", "blue");
-            }, function() {
-                $(this).css("fill", "yellow");
-            });
-        });
-
-$(document).ready(function() {
-            $(".w-dropdown-toggle").hover(function() {
-               $(this).css("fill", "green");
-            }, function() {
-                $(this).css("fill", "yellow");
-            });
-        });*/
-
 $(document).ready(function() {
             $(".departement").hover(function() {
                 $(this).removeClass("departement").addClass("departement-hover");
@@ -174,9 +158,9 @@ $(document).ready(function() {
 
 $(document).ready(function() {
             $(".region").hover(function() {
-                $(this).removeClass("departement").addClass("region-hover");
+                $(this).addClass("region-hover");
             }, function() {
-                $(this).removeClass("region-hover").addClass("departement");
+                $(this).removeClass("region-hover");
             });
         });
 
