@@ -172,6 +172,14 @@ $(document).ready(function() {
             });
         });
 
+$(document).ready(function() {
+            $(".region").hover(function() {
+                $(this).removeClass("departement").addClass("region-hover");
+            }, function() {
+                $(this).removeClass("region-hover").addClass("departement");
+            });
+        });
+
 var list = document.getElementsByClassName("text-block-13");
 
   for (let i = 0; i < list.length; i++) {
