@@ -1,28 +1,3 @@
-<style type="text/css">
-    .carte {
-      width: 100%;
-      margin: 0 auto;
-    }
-    .departement {
-      stroke: #092a25;
-      stroke-width: 1px;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-opacity: .75;
-      fill: #77C892;
-    }
-    .departement-a {
-      fill: #70BF7B;
-    }
-    .departement-hovered {
-      fill: #F18B72;
-    }
-    .region-hovered {
-      fill: #E6A26A;
-    }
-
-</style>
-
 <body>
 
   <div class="carte">
@@ -183,5 +158,13 @@
         $('#' + list[i].id + '-path').removeClass("departement-hovered");
       });
   }
+
+  $(document).ready(function() {
+            $("#martinique-path").hover(function() {
+                $(this).css("background-color", "green");
+            }, function() {
+                $(this).css("background-color", "yellow");
+            });
+        });
 
 </script>
