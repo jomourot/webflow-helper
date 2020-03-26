@@ -172,4 +172,15 @@ $(document).ready(function() {
             });
         });
 
+var list = document.getElementsByClassName("text-block-13");
+
+  for (let i = 0; i < list.length; i++) {
+    $(list[i]).hover(function(){
+        $('#' + list[i].id + '-path').removeClass("departement").addClass("departement-hover");
+      });
+      $(list[i]).mouseout(function(){
+        $('#' + list[i].id + '-path').removeClass("departement-hover").addClass("departement");
+      });
+  }
+
 </script>
