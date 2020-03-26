@@ -148,19 +148,8 @@
 
 <script>
 
-  var list = document.getElementsByClassName("text-block-13");
-
-  for (let i = 0; i < list.length; i++) {
-    $(list[i]).hover(function(){
-        $('#' + list[i].id + '-path').addClass("departement-hovered");
-      });
-      $(list[i]).mouseout(function(){
-        $('#' + list[i].id + '-path').removeClass("departement-hovered");
-      });
-  }
-
-  $(document).ready(function() {
-            $("#martinique-path").hover(function() {
+$(document).ready(function() {
+            $(".departement").hover(function() {
                 $(this).css("background-color", "green");
             }, function() {
                 $(this).css("background-color", "yellow");
