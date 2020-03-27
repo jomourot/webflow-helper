@@ -150,9 +150,9 @@
 
 $(document).ready(function() {
             $(".region").hover(function() {
-                $(this).removeClass("departement")addClass("region-hover");
+                $(this).children().removeClass("departement").addClass("region-hover");
             }, function() {
-                $(this).removeClass("region-hover");
+                $(this).children().removeClass("region-hover").addClass("departement");
             });
         });
 
