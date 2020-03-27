@@ -343,3 +343,27 @@
         </g></svg>
     </div>
 </body>
+
+<script>
+
+$(document).ready(function() {
+            $(".departement").hover(function() {
+                $(this).addClass("departement-hover").parent().siblings().children().addClass("region-hover");
+            }, function() {
+                $(this).removeClass("departement-hover").parent().siblings().children().removeClass("region-hover");
+            });
+        });
+
+
+var list = document.getElementsByClassName("text-block-13");
+
+  for (let i = 0; i < list.length; i++) {
+    $(list[i]).hover(function(){
+        $('#' + list[i].id + '-path').addClass("departement-hover").parent().siblings().children().addClass("region-hover");
+      });
+      $(list[i]).mouseout(function(){
+        $('#' + list[i].id + '-path').removeClass("departement-hover").parent().siblings().children().removeClass("region-hover");
+      });
+  }
+
+</script>
