@@ -343,3 +343,13 @@
         </g></svg>
     </div>
 </body>
+<script>
+
+    var departements = document.getElementsByClassName('departement-number');
+
+      for (var i = 0; i < departements.length; i++) {
+          $("[data-numerodepartement='" + departements[i].textContent + "']").addClass('departement-highighted');
+      };
+
+</script>
+
